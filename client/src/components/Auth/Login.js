@@ -38,7 +38,7 @@ const Login = ({ classes }) => {
         noWrap
         style={{ color: "rgb(66, 133, 244)"}}
       >
-        Welcome
+        Welcome to GeoTagged
       </Typography>
       <GoogleLogin 
         clientId="827258769707-jlad19iut5g4rsk0pgk8t39l56jrs40n.apps.googleusercontent.com"
