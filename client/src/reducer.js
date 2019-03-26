@@ -4,6 +4,11 @@ export default function reducer(state, action) {
       return {
         ...state,
         currentUser: action.payload
+      };
+    case "IS_LOGGED_IN":
+      return {
+        ...state,
+        isAuth: action.payload
       }
     default:
       return state;
