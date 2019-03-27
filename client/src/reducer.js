@@ -29,6 +29,11 @@ export default function reducer(state, action) {
         ...state,
         draft: action.payload
       }
+    case "DELETE_DRAFT":
+      return {
+        ...state,
+        draft: null
+      }
     default:
       return state;
   }
