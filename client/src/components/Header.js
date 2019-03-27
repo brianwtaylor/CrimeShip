@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import MapIcon from "@material-ui/icons/Map";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 import Typography from "@material-ui/core/Typography";
 
 import Context from '../context';
@@ -17,14 +17,14 @@ const Header = ({ classes }) => {
         <Toolbar>
           {/* Title / Logo */}
           <div className={classes.grow}>
-            <MapIcon className={classes.icon} />
+            <VisibilityIcon className={classes.icon} />
             <Typography
               component="h1"
               variant="h6"
               color="inherit"
               noWrap
             >
-              GeoTagged
+              CrimeShip
             </Typography>
           </div>
 

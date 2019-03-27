@@ -36,9 +36,9 @@ const Login = ({ classes }) => {
         variant="h3"
         gutterBottom
         noWrap
-        style={{ color: "rgb(66, 133, 244)"}}
+        style={{ color: "#00e676"}}
       >
-        Welcome to GeoTagged
+        Welcome to CrimeShip
       </Typography>
       <GoogleLogin 
         clientId="827258769707-jlad19iut5g4rsk0pgk8t39l56jrs40n.apps.googleusercontent.com"
@@ -56,6 +56,7 @@ const styles = {
   root: {
     height: "100vh",
     display: "flex",
+    background: "black",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center"

@@ -6,7 +6,7 @@ import Context from '../context';
 import NoContent from './Pin/NoContent';
 import CreatePin from './Pin/CreatePin';
 
-const Blog = ({ classes }) => {
+const Report = ({ classes }) => {
   const { state } = useContext(Context)
   const { draft } = state
 
@@ -43,4 +43,4 @@ const styles = {
   }
 };
 
-export default withStyles(styles)(Blog);
+export default withStyles(styles)(Report);
