@@ -34,7 +34,14 @@ const Map = ({ classes }) => {
   useEffect(() => {
     getUserPosition()
   }, []);
-const [popup, setPopup] = useState(null)
+const [popup, setPopup] = useState(null);
+// remove popup if pin is deleted by the author
+useEffect(() => {
+  const pinExists = popup && state.pins.findIndex(pin => pin._id === popup._id) > -1
+  if (!pinExists) {
+    setPopup(null);
+  }
+}, [state.pins.length])
 
   const getUserPosition = () => {
     if ("geolocation" in navigator) {
