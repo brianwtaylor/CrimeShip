@@ -49,7 +49,16 @@ const Login = ({ classes }) => {
         isSignedIn={true}
         buttonText="Login with Google"
         theme="dark"
+        gutterBottom
       />
+      <Typography 
+        component="p"
+        variant="p"
+        noWrap
+        style={{ color: "#00e676" }}
+      >
+        For Educational Purposes Only!
+      </Typography>
     </div>
   )
 };
