@@ -27,7 +27,7 @@ const Login = ({ classes }) => {
   };
 
   const onFailure = err => {
-    console.err("Error logging in", err)
+    console.error("Error logging in", err)
   }
 
   return (
